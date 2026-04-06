@@ -16,7 +16,7 @@
             /* Mobile: gradient biru penuh */
             background: linear-gradient(180deg, #0d5fa3 0%, #0a3d8f 40%, #071A8C 100%);
             font-family: 'Inter', sans-serif;
-            min-height: 130vh;
+            min-height: 115vh;
             margin: 0;
         }
 
@@ -34,13 +34,13 @@
         .lt-card {
             max-width: 600px;
             width: 100%;
-            min-height: 130vh;
+            min-height: 115vh;
             background: linear-gradient(180deg, #49a5bf 0%, #3070ab 30%, #2151a0 40%, #123195 80%, #030928 100%);
         }
 
         @media (min-width: 576px) {
             .lt-card {
-                min-height: 130vh;
+                min-height: 115vh;
                 border-radius: 1.5rem 1.5rem 0 0;
                 box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.2);
                 padding-bottom: 2rem;
@@ -48,7 +48,7 @@
         }
 
         .lt-topbar {
-            position: sticky;
+            position: static;
             top: 0;
             z-index: 10;
         }
@@ -177,6 +177,24 @@
             color: #fff;
             text-decoration: underline;
         }
+
+        .lt-join-btn {
+            display: inline-block;
+            background: #fff;
+            color: #111;
+            border-radius: 3rem;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            font-size: 0.8375rem;
+            text-decoration: none;
+            margin-bottom: 0.875rem;
+        }
+
+        .lt-join-btn:hover {
+            background: #efefef;
+            color: #111;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -274,7 +292,10 @@
         </div>
 
         <!-- FOOTER -->
-        <div class="pb-0 pt-5 text-center">
+        <div class="pb-0 pt-3 text-center">
+            <a href="https://linktr.ee/register" target="_blank" class="lt-join-btn">
+                Join itsstudentchoir on Linktree
+            </a>
             <div class="d-flex justify-content-center flex-wrap" style="gap: 0.25rem; font-size: 0.625rem;">
                 <a href="#" class="lt-footer-link" onclick="return false;">Cookie Preferences</a>
                 <span style="color: rgba(255,255,255,0.35); font-size: 0.625rem;">•</span>
